@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--bean本地注册 localhost:20880这个服务 基于dubbo框架-->
+    <dubbo:application name="demo-provider"/>
+
+    <dubbo:registry address="N/A"/>
+
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <dubbo:service interface="com.bing.DubboDemo.DubboDemoProvider.service.DemoService" ref="demoService"/>
+
+    <bean id="demoService" class="com.bing.DubboDemo.DubboDemoProvider.DemoServiceImpl"/>
+
+    <dubbo:service interface="com.bing.DubboDemo.DubboDemoProvider.service.SellGoodsService" ref="sellgoodsImpl"></dubbo:service>
+
+    <bean id="sellgoodsImpl" class="com.bing.DubboDemo.DubboDemoProvider.SellGoodsImpl"></bean>
+</beans>
