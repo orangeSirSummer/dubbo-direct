@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../dubboTestProvider-web/dubboTest.iml" filepath="$PROJECT_DIR$/../dubboTestProvider-web/dubboTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboTestConsumer.iml" filepath="$PROJECT_DIR$/dubboTestConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubboTestService -web/dubboTestService.iml" filepath="$PROJECT_DIR$/../dubboTestService -web/dubboTestService.iml" />
+    </modules>
+  </component>
+</project>
